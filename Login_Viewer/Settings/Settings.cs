@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using Login_Viewer;
+using System.Collections.Generic;
 using System.Configuration;
 
-namespace Login_Viewer
+namespace Workplace_Viewer
 {
     class Settings
     {

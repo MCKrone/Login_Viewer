@@ -1,4 +1,4 @@
-﻿namespace Login_Viewer
+﻿namespace Workplace_Viewer
 {
     partial class SettingWindow
     {
@@ -51,22 +51,30 @@
             this.checkBAutoLogin = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBAutoLogout = new System.Windows.Forms.CheckBox();
+            this.tabCSettings = new System.Windows.Forms.TabControl();
+            this.tabPLogin = new System.Windows.Forms.TabPage();
+            this.tabPToDo = new System.Windows.Forms.TabPage();
+            this.tabPGeneral = new System.Windows.Forms.TabPage();
+            this.tabPNode = new System.Windows.Forms.TabPage();
+            this.tabPExpanses = new System.Windows.Forms.TabPage();
             this.gBoxTrueC.SuspendLayout();
             this.tLPTrueC.SuspendLayout();
             this.pAction.SuspendLayout();
             this.gBoxXml.SuspendLayout();
             this.tLPXml.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tabCSettings.SuspendLayout();
+            this.tabPLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // gBoxTrueC
             // 
             this.gBoxTrueC.Controls.Add(this.tLPTrueC);
             this.gBoxTrueC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gBoxTrueC.Location = new System.Drawing.Point(5, 30);
+            this.gBoxTrueC.Location = new System.Drawing.Point(3, 28);
             this.gBoxTrueC.Name = "gBoxTrueC";
             this.gBoxTrueC.Padding = new System.Windows.Forms.Padding(5);
-            this.gBoxTrueC.Size = new System.Drawing.Size(422, 120);
+            this.gBoxTrueC.Size = new System.Drawing.Size(564, 120);
             this.gBoxTrueC.TabIndex = 11;
             this.gBoxTrueC.TabStop = false;
             this.gBoxTrueC.Text = "TrueCrypt";
@@ -93,13 +101,13 @@
             this.tLPTrueC.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tLPTrueC.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tLPTrueC.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tLPTrueC.Size = new System.Drawing.Size(412, 97);
+            this.tLPTrueC.Size = new System.Drawing.Size(554, 97);
             this.tLPTrueC.TabIndex = 0;
             // 
             // btGetExePath
             // 
             this.btGetExePath.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btGetExePath.Location = new System.Drawing.Point(380, 2);
+            this.btGetExePath.Location = new System.Drawing.Point(522, 2);
             this.btGetExePath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btGetExePath.Name = "btGetExePath";
             this.btGetExePath.Size = new System.Drawing.Size(28, 22);
@@ -148,7 +156,7 @@
             this.tBExePath.Location = new System.Drawing.Point(142, 3);
             this.tBExePath.Name = "tBExePath";
             this.tBExePath.ReadOnly = true;
-            this.tBExePath.Size = new System.Drawing.Size(233, 20);
+            this.tBExePath.Size = new System.Drawing.Size(375, 20);
             this.tBExePath.TabIndex = 4;
             this.tBExePath.TabStop = false;
             // 
@@ -158,14 +166,14 @@
             this.tBFilePath.Location = new System.Drawing.Point(142, 28);
             this.tBFilePath.Name = "tBFilePath";
             this.tBFilePath.ReadOnly = true;
-            this.tBFilePath.Size = new System.Drawing.Size(233, 20);
+            this.tBFilePath.Size = new System.Drawing.Size(375, 20);
             this.tBFilePath.TabIndex = 5;
             this.tBFilePath.TabStop = false;
             // 
             // btGetFilePath
             // 
             this.btGetFilePath.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btGetFilePath.Location = new System.Drawing.Point(380, 27);
+            this.btGetFilePath.Location = new System.Drawing.Point(522, 27);
             this.btGetFilePath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btGetFilePath.Name = "btGetFilePath";
             this.btGetFilePath.Size = new System.Drawing.Size(28, 22);
@@ -189,10 +197,10 @@
             this.pAction.Controls.Add(this.lNoSaveInfo);
             this.pAction.Controls.Add(this.btSetSave);
             this.pAction.Controls.Add(this.btSetCancel);
-            this.pAction.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pAction.Location = new System.Drawing.Point(5, 215);
+            this.pAction.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pAction.Location = new System.Drawing.Point(5, 252);
             this.pAction.Name = "pAction";
-            this.pAction.Size = new System.Drawing.Size(422, 49);
+            this.pAction.Size = new System.Drawing.Size(578, 49);
             this.pAction.TabIndex = 0;
             // 
             // lNoSaveInfo
@@ -253,9 +261,9 @@
             // 
             this.gBoxXml.Controls.Add(this.tLPXml);
             this.gBoxXml.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gBoxXml.Location = new System.Drawing.Point(5, 150);
+            this.gBoxXml.Location = new System.Drawing.Point(3, 148);
             this.gBoxXml.Name = "gBoxXml";
-            this.gBoxXml.Size = new System.Drawing.Size(422, 65);
+            this.gBoxXml.Size = new System.Drawing.Size(564, 65);
             this.gBoxXml.TabIndex = 12;
             this.gBoxXml.TabStop = false;
             this.gBoxXml.Text = "Login XML";
@@ -274,7 +282,7 @@
             this.tLPXml.RowCount = 2;
             this.tLPXml.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tLPXml.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tLPXml.Size = new System.Drawing.Size(416, 46);
+            this.tLPXml.Size = new System.Drawing.Size(558, 46);
             this.tLPXml.TabIndex = 1;
             // 
             // label5
@@ -293,7 +301,7 @@
             this.tBXmlPath.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tBXmlPath.Location = new System.Drawing.Point(142, 3);
             this.tBXmlPath.Name = "tBXmlPath";
-            this.tBXmlPath.Size = new System.Drawing.Size(237, 20);
+            this.tBXmlPath.Size = new System.Drawing.Size(379, 20);
             this.tBXmlPath.TabIndex = 3;
             // 
             // checkBAutoLogin
@@ -311,9 +319,9 @@
             this.panel1.Controls.Add(this.checkBAutoLogout);
             this.panel1.Controls.Add(this.checkBAutoLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(5, 5);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(422, 25);
+            this.panel1.Size = new System.Drawing.Size(564, 25);
             this.panel1.TabIndex = 1;
             // 
             // checkBAutoLogout
@@ -326,16 +334,81 @@
             this.checkBAutoLogout.Text = "Auto-Logout on closing";
             this.checkBAutoLogout.UseVisualStyleBackColor = true;
             // 
+            // tabCSettings
+            // 
+            this.tabCSettings.Controls.Add(this.tabPGeneral);
+            this.tabCSettings.Controls.Add(this.tabPLogin);
+            this.tabCSettings.Controls.Add(this.tabPToDo);
+            this.tabCSettings.Controls.Add(this.tabPNode);
+            this.tabCSettings.Controls.Add(this.tabPExpanses);
+            this.tabCSettings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabCSettings.Location = new System.Drawing.Point(5, 5);
+            this.tabCSettings.Name = "tabCSettings";
+            this.tabCSettings.SelectedIndex = 0;
+            this.tabCSettings.Size = new System.Drawing.Size(578, 247);
+            this.tabCSettings.TabIndex = 11;
+            // 
+            // tabPLogin
+            // 
+            this.tabPLogin.Controls.Add(this.gBoxXml);
+            this.tabPLogin.Controls.Add(this.gBoxTrueC);
+            this.tabPLogin.Controls.Add(this.panel1);
+            this.tabPLogin.Location = new System.Drawing.Point(4, 22);
+            this.tabPLogin.Name = "tabPLogin";
+            this.tabPLogin.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPLogin.Size = new System.Drawing.Size(570, 221);
+            this.tabPLogin.TabIndex = 0;
+            this.tabPLogin.Text = "Login";
+            this.tabPLogin.UseVisualStyleBackColor = true;
+            // 
+            // tabPToDo
+            // 
+            this.tabPToDo.Location = new System.Drawing.Point(4, 22);
+            this.tabPToDo.Name = "tabPToDo";
+            this.tabPToDo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPToDo.Size = new System.Drawing.Size(570, 221);
+            this.tabPToDo.TabIndex = 1;
+            this.tabPToDo.Text = "ToDo";
+            this.tabPToDo.UseVisualStyleBackColor = true;
+            // 
+            // tabPGeneral
+            // 
+            this.tabPGeneral.Location = new System.Drawing.Point(4, 22);
+            this.tabPGeneral.Name = "tabPGeneral";
+            this.tabPGeneral.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPGeneral.Size = new System.Drawing.Size(570, 221);
+            this.tabPGeneral.TabIndex = 2;
+            this.tabPGeneral.Text = "General";
+            this.tabPGeneral.UseVisualStyleBackColor = true;
+            // 
+            // tabPNode
+            // 
+            this.tabPNode.Location = new System.Drawing.Point(4, 22);
+            this.tabPNode.Name = "tabPNode";
+            this.tabPNode.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPNode.Size = new System.Drawing.Size(570, 221);
+            this.tabPNode.TabIndex = 3;
+            this.tabPNode.Text = "Node";
+            this.tabPNode.UseVisualStyleBackColor = true;
+            // 
+            // tabPExpanses
+            // 
+            this.tabPExpanses.Location = new System.Drawing.Point(4, 22);
+            this.tabPExpanses.Name = "tabPExpanses";
+            this.tabPExpanses.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPExpanses.Size = new System.Drawing.Size(570, 221);
+            this.tabPExpanses.TabIndex = 4;
+            this.tabPExpanses.Text = "Expenses";
+            this.tabPExpanses.UseVisualStyleBackColor = true;
+            // 
             // SettingWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btSetCancel;
-            this.ClientSize = new System.Drawing.Size(432, 273);
+            this.ClientSize = new System.Drawing.Size(588, 306);
+            this.Controls.Add(this.tabCSettings);
             this.Controls.Add(this.pAction);
-            this.Controls.Add(this.gBoxXml);
-            this.Controls.Add(this.gBoxTrueC);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SettingWindow";
             this.Padding = new System.Windows.Forms.Padding(5);
@@ -353,6 +426,8 @@
             this.tLPXml.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tabCSettings.ResumeLayout(false);
+            this.tabPLogin.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -382,5 +457,11 @@
         private System.Windows.Forms.CheckBox checkBAutoLogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox checkBAutoLogout;
+        private System.Windows.Forms.TabControl tabCSettings;
+        private System.Windows.Forms.TabPage tabPGeneral;
+        private System.Windows.Forms.TabPage tabPLogin;
+        private System.Windows.Forms.TabPage tabPToDo;
+        private System.Windows.Forms.TabPage tabPNode;
+        private System.Windows.Forms.TabPage tabPExpanses;
     }
 }

@@ -256,4 +256,25 @@
   <data name="Info_icon_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Info-icon_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_48_dollar_folder_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\48_dollar-folder-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_48_Inventory_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\48_Inventory-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_48_Locks_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\48_Locks_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_48_todo_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\48_todo_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_24_Settings_L_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\24_Settings-L-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_32_door_in_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\32_door-in-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_32_door_out_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\32_door-out-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

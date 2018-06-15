@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01FD5C76-1433-4EB6-A2AA-C3BC86D8B632}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login_Viewer</RootNamespace>
+    <AssemblyName>Login_Viewer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Expanse_Viewer\Expanse_V.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expanse_Viewer\Expanse_V.Designer.cs">
+      <DependentUpon>Expanse_V.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Viewer\EditListView.cs" />
+    <Compile Include="Login_Viewer\GroupObject.cs" />
+    <Compile Include="TrueCrypt\DoLoginOut.cs" />
+    <Compile Include="TrueCrypt\IJob.cs" />
+    <Compile Include="Login_Viewer\InfoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Viewer\InfoWindow.Designer.cs">
+      <DependentUpon>InfoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueCrypt\LoginJob.cs" />
+    <Compile Include="TrueCrypt\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueCrypt\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Viewer\Login_V.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login_Viewer\Login_V.Designer.cs">
+      <DependentUpon>Login_V.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Node_Viewer\Node_V.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Node_Viewer\Node_V.Designer.cs">
+      <DependentUpon>Node_V.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Viewer\Login_Content\Content_Line.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login_Viewer\Login_Content\Content_Line.Designer.cs">
+      <DependentUpon>Content_Line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Viewer\SortIBindingList.cs" />
+    <Compile Include="Update\DoUpdate.cs" />
+    <Compile Include="Update\UpdateWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update\UpdateWindow.Designer.cs">
+      <DependentUpon>UpdateWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VersionObject.cs" />
+    <Compile Include="XML\Logins.cs" />
+    <Compile Include="XML\LoginObject.cs" />
+    <Compile Include="Login_Viewer\Login_Content\Content.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login_Viewer\Login_Content\Content.Designer.cs">
+      <DependentUpon>Content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Viewer\Login_Content\EditContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Viewer\Login_Content\EditContent.Designer.cs">
+      <DependentUpon>EditContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueCrypt\LookForDriveWaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueCrypt\LookForDriveWaitDialog.Designer.cs">
+      <DependentUpon>LookForDriveWaitDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Settings\SettingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingWindow.Designer.cs">
+      <DependentUpon>SettingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\TmpInfo.cs" />
+    <Compile Include="TrueCrypt\UseTrueCrypt.cs" />
+    <Compile Include="XML\UseXML.cs" />
+    <Compile Include="XML\Serializer.cs" />
+    <Compile Include="ToDo_Viewer\ToDo_V.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToDo_Viewer\ToDo_V.Designer.cs">
+      <DependentUpon>ToDo_V.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Expanse_Viewer\Expanse_V.resx">
+      <DependentUpon>Expanse_V.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Viewer\InfoWindow.resx">
+      <DependentUpon>InfoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueCrypt\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Viewer\Login_V.resx">
+      <DependentUpon>Login_V.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Viewer\Login_Content\Content.resx">
+      <DependentUpon>Content.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Viewer\Login_Content\Content_Line.resx">
+      <DependentUpon>Content_Line.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Viewer\Login_Content\EditContent.resx">
+      <DependentUpon>EditContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueCrypt\LookForDriveWaitDialog.resx">
+      <DependentUpon>LookForDriveWaitDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Settings\SettingWindow.resx">
+      <DependentUpon>SettingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update\UpdateWindow.resx">
+      <DependentUpon>UpdateWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-icon.png" />
+    <None Include="Resources\Cancel-icon.png" />
+    <None Include="Resources\Login-in-icon_48.png" />
+    <None Include="Resources\Login-out-icon_48.png" />
+    <None Include="Resources\Wheel-icon_32.png" />
+    <None Include="Resources\Close-icon_48.png" />
+    <None Include="Resources\Wheel-icon_24.png" />
+    <None Include="Resources\Cancel-icon_48.png" />
+    <None Include="Resources\Cancel-icon_24.png" />
+    <None Include="Resources\Save-icon_24.png" />
+    <None Include="Resources\internet_security-protected_allgemein.jpg" />
+    <None Include="Resources\16_event_City-Building-icon.png" />
+    <None Include="Resources\16_food_burger-icon.png" />
+    <None Include="Resources\16_fun_Smiley-9-icon.png" />
+    <None Include="Resources\16_game_games-icon.png" />
+    <None Include="Resources\16_health_flag-red-cross-icon.png" />
+    <None Include="Resources\16_home_1-Normal-Home-icon.png" />
+    <None Include="Resources\16_knowledge_Books-icon.png" />
+    <None Include="Resources\16_mail_mail-icon.png" />
+    <None Include="Resources\16_management_App-package-icon.png" />
+    <None Include="Resources\16_mobile_iPhone-icon.png" />
+    <None Include="Resources\16_music_AoA-Audio-Extractor-icon.png" />
+    <None Include="Resources\16_none_keyring-icon.png" />
+    <None Include="Resources\16_payment_money-icon.png" />
+    <None Include="Resources\16_service_info-icon.png" />
+    <None Include="Resources\16_shop_shop-cart-down-icon.png" />
+    <None Include="Resources\16_social_Windows-Messenger-icon.png" />
+    <None Include="Resources\16_software_Very-Basic-Code-icon.png" />
+    <None Include="Resources\16_student_Users-Student-Filled-icon.png" />
+    <None Include="Resources\16_travel_Transport-Airplane-Take-Off-icon.png" />
+    <None Include="Resources\16_tv_Tv-icon.png" />
+    <None Include="Resources\16_work_briefcase-icon.png" />
+    <None Include="Resources\icon_20.bmp" />
+    <None Include="Resources\icon_20.tif" />
+    <None Include="Resources\az.png" />
+    <None Include="Resources\za.png" />
+    <None Include="Resources\order_az.png" />
+    <None Include="Resources\order_za.png" />
+    <None Include="Resources\order_group.png" />
+    <None Include="Resources\16_tu_dd.png" />
+    <None Include="Resources\Info-icon_32.png" />
+    <None Include="Resources\48_Locks_icon.png" />
+    <None Include="Resources\48_todo_icon.png" />
+    <None Include="Resources\48_dollar-folder-icon.png" />
+    <None Include="Resources\48_Inventory-icon.png" />
+    <None Include="Resources\24_Settings-L-icon.png" />
+    <None Include="Resources\Rokey-Smooth-Metal-Work-group.ico" />
+    <None Include="Resources\32_door-in-icon.png" />
+    <None Include="Resources\32_door-out-icon.png" />
+    <Content Include="XML\logins_save.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\cancelSearch.png" />
+    <None Include="Resources\cancelShearch.png" />
+    <None Include="Resources\sign-warning-icon.png" />
+    <None Include="Resources\Files-Delete-File-icon.png" />
+    <None Include="Resources\Files-Edit-File-icon.png" />
+    <None Include="Resources\Files-Add-File-icon.png" />
+    <None Include="Resources\fav-delete-icon.png" />
+    <None Include="Resources\fav-add-icon.png" />
+    <None Include="Resources\Refresh-icon_24.png" />
+    <None Include="Resources\Refresh-icon.png" />
+    <None Include="Resources\Programming-Open-In-Browser-icon_24.png" />
+    <None Include="Resources\Programming-Open-In-Browser-icon.png" />
+    <None Include="Resources\Insert-hyperlink-icon.png" />
+    <None Include="Resources\Programming-Edit-Property-icon.png" />
+    <None Include="Resources\Arrows-Down-4-icon.png" />
+    <None Include="Resources\copy-icon.png" />
+    <None Include="Resources\Login-in-icon.png" />
+    <None Include="Resources\Lock-Unlock-icon.png" />
+    <None Include="Resources\Lock-Lock-icon.png" />
+    <None Include="Resources\Settings-L-icon.png" />
+    <None Include="Resources\add-user.png" />
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

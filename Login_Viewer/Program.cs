@@ -2,11 +2,11 @@
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Login_Viewer
+namespace Workplace_Viewer
 {
     static class Program
     {
-        public static LoginSplashScreen splashScreen;
+        public static SplashScreen splashScreen;
 
         /// <summary>
         /// The main entry point for the application.
@@ -17,12 +17,12 @@ namespace Login_Viewer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Thread splashThread = new Thread(new ThreadStart(delegate{
-                splashScreen = new LoginSplashScreen();
-                Application.Run(splashScreen);
-            }));
-            splashThread.SetApartmentState(ApartmentState.STA);
-            splashThread.Start();
+            //Thread splashThread = new Thread(new ThreadStart(delegate{ TODO
+            //    splashScreen = new SplashScreen();
+            //    Application.Run(splashScreen);
+            //}));
+            //splashThread.SetApartmentState(ApartmentState.STA);
+            //splashThread.Start();
 
             MainWindow main = new MainWindow();
             main.Load += new EventHandler(main_Load);

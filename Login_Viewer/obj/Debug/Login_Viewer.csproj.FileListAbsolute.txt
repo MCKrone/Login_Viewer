@@ -28,15 +28,14 @@ F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\bin\Debug\Login_Viewer.pdb
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.csprojResolveAssemblyReference.cache
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.InfoWindows.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.Login.resources
-F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.LoginSplashScreen.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.Login_Content.Content.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.Login_Content.Content_Line.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.Login_Content.EditContent.resources
-F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.LoginView.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.LookForDriveWaitDialog.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.MainWindow.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.Properties.Resources.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.SettingWindow.resources
-F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.InfoControl.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.UpdateWindow.resources
 F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.csproj.GenerateResource.Cache
+F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.Login_Viewer.Login_Viewer.resources
+F:\Dokumente\GitHub\Login_Viewer\Login_Viewer\obj\Debug\Login_Viewer.SplashScreen.resources

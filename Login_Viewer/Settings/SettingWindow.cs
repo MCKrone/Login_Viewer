@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Login_Viewer
+namespace Workplace_Viewer
 {
     public partial class SettingWindow : Form
     {

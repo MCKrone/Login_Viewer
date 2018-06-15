@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Login_Viewer
+namespace Workplace_Viewer
 {
     public class Logins
     {
