@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using My.Collections.Generic;
+
 
 namespace Login_Viewer
 {
@@ -23,20 +25,19 @@ namespace Login_Viewer
 
             info = TmpInfo.Instance;
 
-            columHeaderNames = new string[] { "Name", "Changed", "Created", "Website", "Mail", "Username", "Password", "Memo", "Favorite", "Group", "ID", "Index", "IndexAz"};
-            valueNames = new string[] { "Name", "ChangeDate", "CreationDate", "Website", "Mail", "Username", "Password", "Memo", "Fav", "GroupName", "ID", "Index", "IndexAz" };
-            visibleStates = new int[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0 };
-            editStates = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            columHeaderNames = new string[] { "Name", "Change Type", "Changed", "Created", "Website", "Mail", "Username", "Password", "Memo", "Favorite", "Group", "ID", "Index", "IndexAz"};
+            valueNames = new string[] { "Name", "ChangeType", "ChangeDate", "CreationDate", "Website", "Mail", "Username", "Password", "Memo", "Fav", "GroupName", "ID", "Index", "IndexAz" };
+            visibleStates = new int[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0 };
+            editStates = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
             FillTreeView();
         }
 
         private void FillTreeView()
         {
-            dataGVChanges.AutoGenerateColumns = true;
-            //dataGVChanges.DataSource = info.LoginList;
-
-            dataGVChanges.DataSource = new BindingList<LoginObject>(info.LoginList);
+            dataGVChanges.AutoGenerateColumns = true;        
+            
+            dataGVChanges.DataSource = new SortedBindingList<LoginObject>(info.LoginList);
 
             dataGVChanges.Columns["Export"].DisplayIndex = 0;
 
@@ -51,7 +52,8 @@ namespace Login_Viewer
                 dataGVChanges.Columns[valueNames[i]].SortMode = DataGridViewColumnSortMode.Automatic;
             }
 
-            Console.WriteLine(dataGVChanges);
+            dataGVChanges.Sort(dataGVChanges.Columns["ChangeDate"], ListSortDirection.Ascending);
+            //https://dotnet-snippets.de/snippet/bindinglist-mit-sortierfunktion/1129            
         }        
     }
 }

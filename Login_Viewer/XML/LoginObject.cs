@@ -21,5 +21,6 @@ namespace Login_Viewer
         public string Memo { get; set; }       
         public DateTime CreationDate { get; set; } 
         public DateTime ChangeDate { get; set; }
+        public string ChangeType { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace Login_Viewer
 
             infos = TmpInfo.Instance;
 
-            availableVersions = new List<string>() { "0.0", "0.1" ,"0.2", "0.3"};
+            availableVersions = new List<string>() { "0.0", "0.1" ,"0.2", "0.3", "0.4"};
 
             currentVersion = infos.CurrentVersion;
             currentVersion = String.IsNullOrEmpty(currentVersion) ? availableVersions[0] : currentVersion;
@@ -65,6 +65,14 @@ namespace Login_Viewer
                     Changes = new string[]
                     {
                         "Add creation and change date to each login"
+                    }
+                },
+                new VersionObject()
+                {
+                    VersionNo = "0.4",
+                    Changes = new string[]
+                    {
+                        "Add Change Type to each login"
                     }
                 }
             };
@@ -135,6 +143,22 @@ namespace Login_Viewer
             currentVersion = nextVersion;
         }
 
+        private void update03to04()
+        {
+            foreach (LoginObject log in infos.LoginList)
+            {
+                if (log.ChangeDate != log.CreationDate)
+                    log.ChangeType = "Edit";
+                else
+                {
+                    log.ChangeType = "New";
+                }
+            }
+
+            infos.CurrentVersion = nextVersion;
+            currentVersion = nextVersion;
+        }
+
         //###   Buttons Handles
 
         private void btStart_Click(object sender, EventArgs e)
@@ -152,6 +176,9 @@ namespace Login_Viewer
                         break;
                     case "0.3":
                         update02to03();
+                        break;
+                    case "0.4":
+                        update03to04();
                         break;
                 }
             }

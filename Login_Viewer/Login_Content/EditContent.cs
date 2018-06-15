@@ -78,11 +78,14 @@ namespace Login_Viewer.Login_Content
                 //saveEdit -> Eintrag überschreiben
                 int index = infos.LoginList.FindIndex(x => x.ID == TmpLogObject.ID);
                 TmpLogObject.ChangeDate = DateTime.Today;
+                TmpLogObject.ChangeType = "Edit";
 
                 infos.LoginList[index] = TmpLogObject;
             }
             else
             {
+                TmpLogObject.ChangeType = "New";
+
                 infos.LoginList.Add(TmpLogObject);
             }
 

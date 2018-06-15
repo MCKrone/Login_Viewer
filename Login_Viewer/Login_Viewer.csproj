@@ -100,6 +100,7 @@
     </Compile>
     <Compile Include="Old\LoginActions.cs" />
     <Compile Include="Old\UseXML_old.cs" />
+    <Compile Include="SortIBindingList.cs" />
     <Compile Include="UpdateWindow.cs">
       <SubType>Form</SubType>
     </Compile>
