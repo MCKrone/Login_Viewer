@@ -1,0 +1,15 @@
+﻿<Logins>
+  <LoginList>
+      <LoginObject>
+        <ID>{22eee8bb-3010-4a07-b89d-fad2de542956}</ID>
+        <Fav>false</Fav>
+        <Index>0</Index>
+        <Name>name</Name>
+        <Website>http://www.amazon.de</Website>
+        <Mail>mail@gmx.de</Mail>
+        <Username>testUN</Username>
+        <Password>testP</Password>
+        <Memo>demo Memo</Memo>
+      </LoginObject>
+  </LoginList>
+</Logins>
