@@ -39,22 +39,22 @@
             this.iListLog16 = new System.Windows.Forms.ImageList(this.components);
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.pSets = new System.Windows.Forms.Panel();
+            this.bInfo = new System.Windows.Forms.Button();
+            this.btSettings = new System.Windows.Forms.Button();
+            this.btMountDism = new System.Windows.Forms.Button();
             this.iListLoginState = new System.Windows.Forms.ImageList(this.components);
             this.pListNames = new System.Windows.Forms.Panel();
             this.gBoxLogs = new System.Windows.Forms.GroupBox();
             this.lViewLogs = new System.Windows.Forms.ListView();
             this.pOrder = new System.Windows.Forms.Panel();
-            this.pAddLog = new System.Windows.Forms.Panel();
-            this.pSearch = new System.Windows.Forms.Panel();
-            this.toolTipMain = new System.Windows.Forms.ToolTip(this.components);
             this.btOrderZa = new System.Windows.Forms.Button();
             this.btOrderGroups = new System.Windows.Forms.Button();
             this.btOrderAz = new System.Windows.Forms.Button();
+            this.pAddLog = new System.Windows.Forms.Panel();
             this.btAddLog = new System.Windows.Forms.Button();
+            this.pSearch = new System.Windows.Forms.Panel();
             this.btCancelSearch = new System.Windows.Forms.Button();
-            this.bInfo = new System.Windows.Forms.Button();
-            this.btSettings = new System.Windows.Forms.Button();
-            this.btMountDism = new System.Windows.Forms.Button();
+            this.toolTipMain = new System.Windows.Forms.ToolTip(this.components);
             this.pLoginAction.SuspendLayout();
             this.pFavorites.SuspendLayout();
             this.gBoxFavs.SuspendLayout();
@@ -184,6 +184,57 @@
             this.pSets.Size = new System.Drawing.Size(153, 51);
             this.pSets.TabIndex = 7;
             // 
+            // bInfo
+            // 
+            this.bInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bInfo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.bInfo.FlatAppearance.BorderSize = 0;
+            this.bInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bInfo.Image = global::Login_Viewer.Properties.Resources.Info_icon_32;
+            this.bInfo.Location = new System.Drawing.Point(54, 5);
+            this.bInfo.Name = "bInfo";
+            this.bInfo.Size = new System.Drawing.Size(51, 41);
+            this.bInfo.TabIndex = 8;
+            this.bInfo.UseVisualStyleBackColor = true;
+            this.bInfo.Click += new System.EventHandler(this.bInfo_Click);
+            // 
+            // btSettings
+            // 
+            this.btSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSettings.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btSettings.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btSettings.FlatAppearance.BorderSize = 0;
+            this.btSettings.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSettings.Image = global::Login_Viewer.Properties.Resources.Wheel_icon_24;
+            this.btSettings.Location = new System.Drawing.Point(105, 5);
+            this.btSettings.Name = "btSettings";
+            this.btSettings.Size = new System.Drawing.Size(48, 41);
+            this.btSettings.TabIndex = 7;
+            this.toolTipMain.SetToolTip(this.btSettings, "Open Settings");
+            this.btSettings.UseVisualStyleBackColor = true;
+            this.btSettings.Click += new System.EventHandler(this.btSettings_Click);
+            // 
+            // btMountDism
+            // 
+            this.btMountDism.BackColor = System.Drawing.Color.Transparent;
+            this.btMountDism.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btMountDism.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btMountDism.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btMountDism.FlatAppearance.BorderSize = 0;
+            this.btMountDism.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btMountDism.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMountDism.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btMountDism.ImageIndex = 0;
+            this.btMountDism.ImageList = this.iListLoginState;
+            this.btMountDism.Location = new System.Drawing.Point(0, 5);
+            this.btMountDism.Name = "btMountDism";
+            this.btMountDism.Size = new System.Drawing.Size(50, 41);
+            this.btMountDism.TabIndex = 5;
+            this.toolTipMain.SetToolTip(this.btMountDism, "Login/Logout");
+            this.btMountDism.UseVisualStyleBackColor = false;
+            this.btMountDism.Click += new System.EventHandler(this.btMountDism_Click);
+            // 
             // iListLoginState
             // 
             this.iListLoginState.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iListLoginState.ImageStream")));
@@ -247,29 +298,6 @@
             this.pOrder.Size = new System.Drawing.Size(147, 31);
             this.pOrder.TabIndex = 5;
             // 
-            // pAddLog
-            // 
-            this.pAddLog.Controls.Add(this.btAddLog);
-            this.pAddLog.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pAddLog.Location = new System.Drawing.Point(3, 391);
-            this.pAddLog.Name = "pAddLog";
-            this.pAddLog.Padding = new System.Windows.Forms.Padding(1);
-            this.pAddLog.Size = new System.Drawing.Size(147, 37);
-            this.pAddLog.TabIndex = 0;
-            // 
-            // pSearch
-            // 
-            this.pSearch.BackColor = System.Drawing.Color.White;
-            this.pSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pSearch.Controls.Add(this.btCancelSearch);
-            this.pSearch.Controls.Add(this.textBoxSearch);
-            this.pSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSearch.Location = new System.Drawing.Point(3, 16);
-            this.pSearch.Name = "pSearch";
-            this.pSearch.Padding = new System.Windows.Forms.Padding(1);
-            this.pSearch.Size = new System.Drawing.Size(147, 18);
-            this.pSearch.TabIndex = 4;
-            // 
             // btOrderZa
             // 
             this.btOrderZa.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -315,6 +343,16 @@
             this.btOrderAz.UseVisualStyleBackColor = true;
             this.btOrderAz.Click += new System.EventHandler(this.btOrderAz_Click);
             // 
+            // pAddLog
+            // 
+            this.pAddLog.Controls.Add(this.btAddLog);
+            this.pAddLog.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pAddLog.Location = new System.Drawing.Point(3, 391);
+            this.pAddLog.Name = "pAddLog";
+            this.pAddLog.Padding = new System.Windows.Forms.Padding(1);
+            this.pAddLog.Size = new System.Drawing.Size(147, 37);
+            this.pAddLog.TabIndex = 0;
+            // 
             // btAddLog
             // 
             this.btAddLog.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -336,6 +374,19 @@
             this.btAddLog.UseVisualStyleBackColor = true;
             this.btAddLog.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
+            // pSearch
+            // 
+            this.pSearch.BackColor = System.Drawing.Color.White;
+            this.pSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pSearch.Controls.Add(this.btCancelSearch);
+            this.pSearch.Controls.Add(this.textBoxSearch);
+            this.pSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSearch.Location = new System.Drawing.Point(3, 16);
+            this.pSearch.Name = "pSearch";
+            this.pSearch.Padding = new System.Windows.Forms.Padding(1);
+            this.pSearch.Size = new System.Drawing.Size(147, 18);
+            this.pSearch.TabIndex = 4;
+            // 
             // btCancelSearch
             // 
             this.btCancelSearch.Dock = System.Windows.Forms.DockStyle.Right;
@@ -353,57 +404,6 @@
             this.btCancelSearch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btCancelSearch.UseVisualStyleBackColor = true;
             this.btCancelSearch.Click += new System.EventHandler(this.btCancelSearch_Click);
-            // 
-            // bInfo
-            // 
-            this.bInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bInfo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bInfo.FlatAppearance.BorderSize = 0;
-            this.bInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bInfo.Image = global::Login_Viewer.Properties.Resources.Info_icon_32;
-            this.bInfo.Location = new System.Drawing.Point(54, 5);
-            this.bInfo.Name = "bInfo";
-            this.bInfo.Size = new System.Drawing.Size(51, 41);
-            this.bInfo.TabIndex = 8;
-            this.bInfo.UseVisualStyleBackColor = true;
-            this.bInfo.Click += new System.EventHandler(this.bInfo_Click);
-            // 
-            // btSettings
-            // 
-            this.btSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSettings.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btSettings.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.btSettings.FlatAppearance.BorderSize = 0;
-            this.btSettings.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.btSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSettings.Image = global::Login_Viewer.Properties.Resources.Wheel_icon_24;
-            this.btSettings.Location = new System.Drawing.Point(105, 5);
-            this.btSettings.Name = "btSettings";
-            this.btSettings.Size = new System.Drawing.Size(48, 41);
-            this.btSettings.TabIndex = 7;
-            this.toolTipMain.SetToolTip(this.btSettings, "Open Settings");
-            this.btSettings.UseVisualStyleBackColor = true;
-            this.btSettings.Click += new System.EventHandler(this.btSettings_Click);
-            // 
-            // btMountDism
-            // 
-            this.btMountDism.BackColor = System.Drawing.Color.Transparent;
-            this.btMountDism.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMountDism.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btMountDism.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.btMountDism.FlatAppearance.BorderSize = 0;
-            this.btMountDism.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.btMountDism.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMountDism.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btMountDism.ImageIndex = 0;
-            this.btMountDism.ImageList = this.iListLoginState;
-            this.btMountDism.Location = new System.Drawing.Point(0, 5);
-            this.btMountDism.Name = "btMountDism";
-            this.btMountDism.Size = new System.Drawing.Size(50, 41);
-            this.btMountDism.TabIndex = 5;
-            this.toolTipMain.SetToolTip(this.btMountDism, "Login/Logout");
-            this.btMountDism.UseVisualStyleBackColor = false;
-            this.btMountDism.Click += new System.EventHandler(this.btMountDism_Click);
             // 
             // MainWindow
             // 
